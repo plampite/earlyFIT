@@ -20,6 +20,20 @@ For each region in the data, the user selected models (one or more) will be firs
 
 An Octave/MATLAB implementation has been favoured (with respect to, say, one in C++ using [Ceres](https://github.com/ceres-solver/ceres-solver)) in order to keep everything simple and understandable to anyone. For the same reason, only matrices and cells are used, in place of more complicated data structures that could have made the code better conceived from the programming point of view. The main result is that some parts are not really fast and others are just written in a way that leads to inefficient execution. Editing is also longer, but everything is kept at a very simple level.
 
+# How to modify the code
+The code has been developed to allow a certain set of relatively simple modifications
+
+## Data input and pre-processing
+Functions load_data and pre_process contain, respectively, several examples of data import and manipulation methods. You can just add your own using the available ones as examples.
+
+## Initial parameters
+To be completed
+
+## Adding a new model
+To be completed
+
+# References
+
 The following references have been used as inspiration for ideas and implementation:
 
 * P. Yan, G. Chowell: Quantitative Methods for Investigating Infectious Disease Outbreaks, 2019, Springer
