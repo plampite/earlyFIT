@@ -43,7 +43,9 @@ When editing or adding a model or an user function, you need to edit the followi
 
 * The method used to estimate the index of dispersion is pretty naive and you might want to improve on that. Still, its impact is relatively low and the current method just seems to work.
 
-* There is no computation of basic or effective reproduction numbers. This is because of several reasons: a) each model has its own definitions, which would have implied an additional routine to modify when changing adding models; b) estimates based on the incidence rate (i.e., independent from the model) also require an hypothesis on the serial interval distribution, which is a piece of information that is outside the scope of the present framework; c) they really give no additional information with respect to the fitted and extrapolated curves; d) again, this should come out from the ensemble part as well, leading to additional memory and time issues. 
+* There is no computation of basic or effective reproduction numbers. This is because of several reasons: a) each model has its own definitions, which would have implied an additional routine to modify when changing adding models; b) estimates based on the incidence rate (i.e., independent from the model) also require an hypothesis on the serial interval distribution, which is a piece of information that is outside the scope of the present framework; c) they really give no additional information with respect to the fitted and extrapolated curves; d) again, this should come out from the ensemble part as well, leading to additional memory and time issues.
+
+* There is no output on parameters statistics and very few plots at all. Yes, but the data is saved to file and can be further analyzed at will.
 
 # References
 
