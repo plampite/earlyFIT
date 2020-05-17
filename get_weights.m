@@ -11,9 +11,8 @@ function w = get_weights(res,K,crit,thres)
     case "RMS"
       r = 1./((1./(nt-K-1)).*res);
       w = (1./sum(r,1)).*r;
-    case "EQUAL"
+    otherwise %"EQUAL"
       w = ones(nm,nr)/nm;
-    otherwise
   end
   w(w<min(thres,1/nm)) = 0;
   w = (1./sum(w,1)).*w;
