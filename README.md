@@ -16,9 +16,11 @@ The idea behind the tool is to fit an ensemble of models to one or multiple regi
 
 where the Generalized versions of the models 1-4 allow for early sub-exponential growth.
 
-For each region in the data, the user selected models (one or more) will be first fitted to the current data and later refitted to a given number of bootstrapped samples (built using one of three available error structures: Binomial, Poisson or Negative Binomial). For R regions, S models and M bootstrapped samples, the script will make RS(1+M) fittings and produce RM^S bootstrapped curves.
+For each region in the data, the user selected models (one or more) will be first fitted to the current data and later refitted to a given number of bootstrapped samples (built using one of three available error structures: Binomial, Poisson or Negative Binomial). For R regions, S models and M bootstrapped samples, the script will make RS(1+M) fittings and produce RM^S bootstrapped curves. The final ensemble for each region is built by weighting each of the M^S curves according to one of three possible criterions (Akaike, RMS or equal weights). Extrapolations of the fit (or "forecasts") are built in the same way. In both cases, confidence intervals are built from the given ensemble of curves.
 
-The main references are:
+An Octave/MATLAB implementation has been favoured (with respect to, say, one in C++ using [Ceres](https://github.com/ceres-solver/ceres-solver)) in order to keep everything simple and understandable to anyone. For the same reason, only matrices and cells are used, in place of more complicated data structures that could have made the code better conceived from the programming point of view. The main result is that some parts are not really fast and others are just written in a way that leads to inefficient execution.
+
+The following references have been used for the implementation:
 
 * P. Yan, G. Chowell: Quantitative Methods for Investigating Infectious Disease Outbreaks, 2019, Springer
 
