@@ -58,7 +58,7 @@ factor = 0;              %factor = var/mean (<1 Binomial, 1 Poisson, >1 Negative
 quant  = [0.025; 0.975]; %Lower and upper quantiles for the confidence intervals
 
 %Note that bootstraping S models M times over R regions implies:
-%1) R(1+MS) Minimizations (altough, only the first R might be harder/longer)
+%1) RS(1+M) Minimizations (altough, only the first RS might be harder/longer)
 %2) RM^S bootstrapped curves (linear combinations of the above)
 %Thus, if you want RN total bootstrapped curves you can pick one of the following:
 %a) M = N^(1/S)       if you want to have S models
