@@ -34,6 +34,17 @@ However, if an user function is used, this step is mandatory for the parameters 
 ## Adding/editing a model or user function
 When editing or adding a model or an user function, you need to edit the following functions together: model_param, from_guess_to_param, growth_model, user_functions. This should be relatively straightforward considering the examples given by previous models and user functions.
 
+# Known issues and missing features
+1. The fitting is relatively slow for models relying on one or more ODE, and even more so when the number of parameters is relatively high. There is really nothing you can do about it, except maybe switching to Fortran/C++ (I don't know, at the moment, if running in MATLAB might be any faster than Octave). Of course, this has a real impact only when you have a large number of models, regions and/or bootstrapping samples.
+
+2. Taking statistics from the ensemble of curves has been programmed with a certain model in mind and to avoid memory bottlenecks. This has led to a slow implementation (again, this wouldn't be the case in a compiled language). Still, this only becomes a problem if the overall number of curves in the ensemble is relevant.
+
+3. Ideally, every final quantity should be obtained from the ensemble of curves. At the moment only the cumulative incidence and its confidence interval is obtained in this way (because of the problems in 2), while some derived quantities (like the incidence rate) are nonetheless plotted in output. This can be corrected easily, but will have a cost in terms of memory and computing time.
+
+4. The method used to estimate the index of dispersion is pretty naive and you might want to improve on that. Still, its impact is relatively low and the current method just seems to work.
+
+5. There is no computation of basic or effective reproduction numbers. This is because of several reasons: a) each model has its own definitions, which would have implied an additional routine to modify when changing adding models; b) estimates based on the incidence rate (i.e., independent from the model) also require an hypothesis on the serial interval distribution, which is a piece of information that is outside the scope of the present framework; c) they really give no additional information with respect to the fitted and extrapolated curves; d) again, this should come out from the ensemble part as well, leading to additional memory and time issues. 
+
 # References
 
 The following references have been used as inspiration for ideas and implementation:
