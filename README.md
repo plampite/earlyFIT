@@ -26,11 +26,13 @@ The code has been developed to allow a certain set of relatively simple modifica
 ## Data input and pre-processing
 Functions load_data and pre_process contain, respectively, several examples of data import and manipulation methods. You can just add your own using the available ones as examples.
 
-## Initial parameters
-To be completed
+## Initial parameter values and bounds
+For each of the available models, you can use the function model_param to provide initial values and bounds for the model parameters, including fixing some of them by using equal values for the bounds. This step is not strictly necessary because an internal routine is used to taste several initial values before the fitting, but won't certainly hurt if realistic values are available.
 
-## Adding a new model
-To be completed
+However, if an user function is used, this step is mandatory for the parameters entering the user function.
+
+## Adding/editing a model or user function
+When editing or adding a model or an user function, you need to edit the following functions together: model_param, from_guess_to_param, growth_model, user_functions. This should be relatively straightforward considering the examples given by previous models and user functions.
 
 # References
 
