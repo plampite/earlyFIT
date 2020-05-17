@@ -18,7 +18,7 @@ where the Generalized versions of the models 1-4 allow for early sub-exponential
 
 For each region in the data, the user selected models (one or more) will be first fitted to the current data and later refitted to a given number of bootstrapped samples (built using one of three available error structures: Binomial, Poisson or Negative Binomial). For R regions, S models and M bootstrapped samples, the script will make RS(1+M) fittings and produce RM^S bootstrapped curves. The final ensemble for each region is built by weighting each of the M^S curves according to one of three possible criterions (Akaike, RMS or equal weights). Extrapolations of the fit (or "forecasts") are built in the same way. In both cases, confidence intervals are built from the given ensemble of curves.
 
-An Octave/MATLAB implementation has been favoured (with respect to, say, one in C++ using [Ceres](https://github.com/ceres-solver/ceres-solver)) in order to keep everything simple and understandable to anyone. For the same reason, only matrices and cells are used, in place of more complicated data structures that could have made the code better conceived from the programming point of view. The main result is that some parts are not really fast and others are just written in a way that leads to inefficient execution.
+An Octave/MATLAB implementation has been favoured (with respect to, say, one in C++ using [Ceres](https://github.com/ceres-solver/ceres-solver)) in order to keep everything simple and understandable to anyone. For the same reason, only matrices and cells are used, in place of more complicated data structures that could have made the code better conceived from the programming point of view. The main result is that some parts are not really fast and others are just written in a way that leads to inefficient execution. Editing is also longer, but everything is kept at a very simple level.
 
 The following references have been used for the implementation:
 
@@ -33,6 +33,14 @@ The following references have been used for the implementation:
 * S. Portet: A primer on model selection using the Akaike Information Criterion, Infectious Disease Modeling 5, 2020
 
 * G. Chowell, A. Tariq, J.M. Hyman: A novel sub-epidemic modeling framework for short-term forecasting epidemic waves, BMC Medicine 17:164, 2019
+
+* C. Viboud, L. Simonsen, G. Chowell: A generalized-growth model to characterize the early ascending phase of infectious disease outbreaks, Epidemics 15, 2016
+
+* G. Chowell, C. Viboud, L. Simonsen, SM. Moghadas: Characterizing the reproduction number of epidemics with early subexponential growth dynamics, J. R. Soc. Interface 13, 2016
+
+* R. Burger, G. Chowell, L. Yissedt Lara-Diaz: Comparative analysis of phenomenological growth models applied to epidemic outbreaks, MBE 16(5), 2019
+
+* D. Champredon, J. Dushoff, D.J.D. Earn: Equivalence of the Erlang-distributed SEIR epidemic model and the renewal equation, SIAM J. APPL. MATH. Vol. 78, No. 6, 2018 
 
 * R. Pearl and L.J. Reed: A Further Note on the Mathematical Theory of Population Growth, PNAS, 1922 8(12)
 
