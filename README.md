@@ -51,36 +51,36 @@ When editing or adding a model or an user function, you need to edit the followi
 
 The following references have been used as inspiration for ideas and implementation:
 
-1. P. Yan, G. Chowell: Quantitative Methods for Investigating Infectious Disease Outbreaks, 2019, Springer
+1. P. Yan, G. Chowell: *Quantitative Methods for Investigating Infectious Disease Outbreaks*, 2019, Springer
 
-2. G. Chowell: Fitting dynamic models to epidemic outbreaks with quantiﬁed uncertainty: A primer for parameter uncertainty, identiﬁability, and forecasts, Infectious Disease Modelling 2, 2017
+2. G. Chowell: *Fitting dynamic models to epidemic outbreaks with quantiﬁed uncertainty: A primer for parameter uncertainty, identiﬁability, and forecasts*, Infectious Disease Modelling 2, 2017
 
-3. G. Chowell, R. Luo, K. Sun, K. Roosa, A. Tariq, C. Viboud: Real-time forecasting of epidemic trajectories using computational dynamic ensembles, Epidemics 30, 2020
+3. G. Chowell, R. Luo, K. Sun, K. Roosa, A. Tariq, C. *Viboud: Real-time forecasting of epidemic trajectories using computational dynamic ensembles*, Epidemics 30, 2020
 
-4. J. Ma: Estimating epidemic exponential growth rate and basic reproduction number, Infectious Disease Modeling 5, 2020
+4. J. Ma: *Estimating epidemic exponential growth rate and basic reproduction number*, Infectious Disease Modeling 5, 2020
 
-5. S. Portet: A primer on model selection using the Akaike Information Criterion, Infectious Disease Modeling 5, 2020
+5. S. Portet: *A primer on model selection using the Akaike Information Criterion*, Infectious Disease Modeling 5, 2020
 
-6. G. Chowell, A. Tariq, J.M. Hyman: A novel sub-epidemic modeling framework for short-term forecasting epidemic waves, BMC Medicine 17:164, 2019
+6. G. Chowell, A. Tariq, J.M. Hyman: *A novel sub-epidemic modeling framework for short-term forecasting epidemic waves*, BMC Medicine 17:164, 2019
 
-7. C. Viboud, L. Simonsen, G. Chowell: A generalized-growth model to characterize the early ascending phase of infectious disease outbreaks, Epidemics 15, 2016
+7. C. Viboud, L. Simonsen, G. Chowell: *A generalized-growth model to characterize the early ascending phase of infectious disease outbreaks*, Epidemics 15, 2016
 
-8. G. Chowell, C. Viboud, L. Simonsen, SM. Moghadas: Characterizing the reproduction number of epidemics with early subexponential growth dynamics, J. R. Soc. Interface 13, 2016
+8. G. Chowell, C. Viboud, L. Simonsen, SM. Moghadas: *Characterizing the reproduction number of epidemics with early subexponential growth dynamics*, J. R. Soc. Interface 13, 2016
 
-9. R. Burger, G. Chowell, L. Yissedt Lara-Diaz: Comparative analysis of phenomenological growth models applied to epidemic outbreaks, MBE 16(5), 2019
+9. R. Burger, G. Chowell, L. Yissedt Lara-Diaz: *Comparative analysis of phenomenological growth models applied to epidemic outbreaks*, MBE 16(5), 2019
 
-10. D. Champredon, J. Dushoff, D.J.D. Earn: Equivalence of the Erlang-distributed SEIR epidemic model and the renewal equation, SIAM J. APPL. MATH. Vol. 78, No. 6, 2018
+10. D. Champredon, J. Dushoff, D.J.D. Earn: *Equivalence of the Erlang-distributed SEIR epidemic model and the renewal equation*, SIAM J. APPL. MATH. Vol. 78, No. 6, 2018
 
-11. V. Capasso, G. Serio: A Generalization of the Kermack-McKendrick Deterministic Epidemic Model, MATHEMATICAL BIOSCIENCES 42, 1978
+11. V. Capasso, G. Serio: *A Generalization of the Kermack-McKendrick Deterministic Epidemic Model*, MATHEMATICAL BIOSCIENCES 42, 1978
 
-12. W. Liu, S.A. Levin, Y. Iwasa: Influence of nonlinear incidence rates upon the behavior of SIRS epidemiological models, J. Math. Biology 23, 1986
+12. W. Liu, S.A. Levin, Y. Iwasa: *Influence of nonlinear incidence rates upon the behavior of SIRS epidemiological models*, J. Math. Biology 23, 1986
 
-13. N. Bacaër, X. Abdurahman: Resonance of the epidemic threshold in a periodic environment, J. Math. Biol. 57, 2008
+13. N. Bacaër, X. Abdurahman: *Resonance of the epidemic threshold in a periodic environment*, J. Math. Biol. 57, 2008
 
-14. R. Pearl and L.J. Reed: A Further Note on the Mathematical Theory of Population Growth, PNAS, 1922 8(12)
+14. R. Pearl and L.J. Reed: *A Further Note on the Mathematical Theory of Population Growth*, PNAS, 1922 8(12)
 
-15. C.P. Winsor: The Gompertz Curve as a Growth Curve, PNAS, 1932 18(1)
+15. C.P. Winsor: *The Gompertz Curve as a Growth Curve*, PNAS, 1932 18(1)
 
-16. K.M.C. Tjørve, E. Tjørve: The use of Gompertz models in growth analyses, and new Gompertz-model approach: An addition to the Unified-Richards family, PLoS ONE 12(6), 2017
+16. K.M.C. Tjørve, E. Tjørve: *The use of Gompertz models in growth analyses, and new Gompertz-model approach: An addition to the Unified-Richards family*, PLoS ONE 12(6), 2017
 
-17. K.M.C. Tjørve, E. Tjørve: A proposed family of Uniﬁed models for sigmoidal growth, Ecological Modelling 359, 2017
+17. K.M.C. Tjørve, E. Tjørve: *A proposed family of Uniﬁed models for sigmoidal growth*, Ecological Modelling 359, 2017
