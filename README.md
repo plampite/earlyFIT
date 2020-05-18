@@ -1,7 +1,7 @@
 # earlyFIT
 earlyFIT is an Octave framework to fit an ensemble of epidemic models to one or multiple regions at once. The name stems from the fact that it is suited to fit epidemic models in the early outbreak phase, when little data is available. I also wanted to avoid any obvious reference to the 2019-2020 pandemic in the name.
 
-To use it, just edit and launch the earlyFIT.m script, which should be commented enough to be self-descriptive. The script should be easily adaptable to MATLAB, but no attempt has been made at this and there certainly are at least a couple of Octave function calls that need to be replaced with something else in MATLAB.
+To use it, just edit and launch the `earlyFIT.m` script, which should be commented enough to be self-descriptive. The script should be easily adaptable to MATLAB, but no attempt has been made at this and there certainly are at least a couple of Octave function calls that need to be replaced with something else in MATLAB.
 
 The idea behind the tool is to fit an ensemble of models to one or multiple regions at once. Data can be imported from one of multiple online sources or from a given file, while the following models are available for the fitting:
 
@@ -24,15 +24,15 @@ An Octave/MATLAB implementation has been favoured (with respect to, say, one in 
 The code has been developed to allow a certain set of relatively simple modifications
 
 ## Data input and pre-processing
-Functions load_data and pre_process contain, respectively, several examples of data import and manipulation methods. You can just add your own using the available ones as examples.
+Functions `load_data` and `pre_process` contain, respectively, several examples of data import and manipulation methods. You can just add your own using the available ones as examples.
 
 ## Initial parameter values and bounds
-For each of the available models, you can use the function model_param to provide initial values and bounds for the model parameters, including fixing some of them by using equal values for the bounds. This step is not strictly necessary because an internal routine is used to taste several initial values before the fitting, but won't certainly hurt if realistic values are available.
+For each of the available models, you can use the function `model_param` to provide initial values and bounds for the model parameters, including fixing some of them by using equal values for the bounds. This step is not strictly necessary because an internal routine is used to taste several initial values before the fitting, but won't certainly hurt if realistic values are available.
 
 However, if an user function is used, this step is mandatory for the parameters entering the user function.
 
 ## Adding/editing a model or user function
-When editing or adding a model or an user function, you need to edit the following functions together: model_param, from_guess_to_param, growth_model, user_functions. This should be relatively straightforward considering the examples given by previous models and user functions.
+When editing or adding a model or an user function, you need to edit the following functions together: `model_param`, `from_guess_to_param`, `growth_model`, `user_functions`. This should be relatively straightforward considering the examples given by previous models and user functions.
 
 # Known issues and missing features
 * The fitting is relatively slow for models relying on one or more ODE, and even more so when the number of parameters is relatively high. There is really nothing you can do about it, except maybe switching to Fortran/C++ (I don't know, at the moment, if running in MATLAB might be any faster than Octave). Of course, this has a real impact only when you have a large number of models, regions and/or bootstrapping samples.
