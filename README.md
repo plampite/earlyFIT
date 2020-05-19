@@ -3,7 +3,7 @@ earlyFIT is an Octave framework to fit an ensemble of epidemic models to one or 
 
 To use it, just edit and launch the `earlyFIT.m` script, which should be commented enough to be self-descriptive. The script should be easily adaptable to MATLAB, but no attempt has been made at this and there certainly are at least a couple of Octave function calls that need to be replaced with something else in MATLAB.
 
-The idea behind the tool is to fit an ensemble of models to one or multiple regions at once. Data can be imported from one of multiple online sources or from a given file, while the following models are available for the fitting:
+The idea behind the tool is to fit an ensemble of models to one or multiple regions at once. Data (only the cumulative incidence is allowed, but the fit can be optionally done in terms of the incidence rate) can be imported from one of multiple online sources or from a given file, while the following models are available for the fitting:
 
 1. Exponential (Regular and Generalized)
 2. Logistic (Regular and Generalized)
@@ -46,6 +46,8 @@ When editing or adding a model or an user function, you need to edit the followi
 * There is no computation of basic or effective reproduction numbers. This is because of several reasons: a) each model has its own definitions, which would have implied an additional routine to modify when changing adding models; b) estimates based on the incidence rate (i.e., independent from the model) also require an hypothesis on the serial interval distribution, which is a piece of information that is outside the scope of the present framework; c) they really give no additional information with respect to the fitted and extrapolated curves; d) again, this should come out from the ensemble part as well, leading to additional memory and time issues.
 
 * There is no output on parameters statistics and very few plots at all. However, the data is saved to file and can be further analyzed at will.
+
+* Most parts do not depend on the times being uniformly spaced, but few of them do. This could probably be fixed, but it wasn't a priority and it hasn't been investigated at all.
 
 # References
 
